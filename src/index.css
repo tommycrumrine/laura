@@ -10,32 +10,46 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 32px;
-  p {
-    margin-top: 0;
-    margin-bottom: 24px;
-  }
-  .bars {
-    height: 30px;
-    margin: 32px;
-  }
-  .logo {
-    max-width: 700px;
-  }
-  .top-nav {
-    margin-left: auto;
-  }
-  .intro-text {
-    width: 700px;
-    font-family: Sofia Sans;
-    font-weight: 300;
-    font-style: Light;
-    font-size: 24px;
-    leading-trim: NONE;
-    line-height: 100%;
-    letter-spacing: 0%;
-  }
+  padding-left: 24px;
+  padding-right: 24px;
 }
+.fixed-content {
+  max-width: 700px;
+  width: 100%;
+  gap: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+.bars {
+  height: 30px;
+  margin: 32px;
+}
+.logo {
+  max-width: 700px;
+  width: 100%;
+}
+.top-nav {
+  margin-left: auto;
+}
+.intro-text.top {
+  margin-right: auto;
+}
+
+.intro-text {
+  font-family: Sofia Sans;
+  font-weight: 300;
+  font-style: Light;
+  font-size: 24px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
 .nav-buttons {
   display: flex;
   flex-direction: column;
@@ -46,17 +60,14 @@ body {
     font-family: Rethink Sans;
     font-weight: 400;
     font-style: Regular;
-    font-size: 28px;
+    font-size: 24px;
     leading-trim: NONE;
     line-height: 100%;
     letter-spacing: 0%;
-
     width: 100%;
-
     text-align: center;
-
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 18px;
+    padding-bottom: 18px;
   }
   .client-work {
     background-color: #f0b277;
@@ -71,19 +82,30 @@ body {
     background-color: #7dad63;
   }
 }
+.contact-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
 .contact-info {
+  max-width: 700px;
   padding: 24px 116px;
   display: flex;
-  gap: 45px;
+  gap: 28px;
   align-items: center;
   font-family: Sofia Sans Condensed;
 
-  font-weight: 400;
+  font-weight: 700;
   font-style: Regular;
-  font-size: 24px;
+  font-size: 18px;
   leading-trim: NONE;
   line-height: 110%;
   letter-spacing: 0%;
+  @media (max-width: 768px) {
+    padding: 24px 58px;
+    /* … */
+  }
 
   p {
     margin: 0;
