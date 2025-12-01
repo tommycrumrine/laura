@@ -1,11 +1,44 @@
 body {
   font-family: Sofia Sans;
   font-weight: 300;
-  font-style: Light;
+  font-size: 24px;
   line-height: 100%;
   letter-spacing: 0%;
   margin: 0;
 }
+.collapse {
+  margin-left: auto;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+a:visited {
+  color: unset;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: end;
+}
+
+.hamburger {
+  height: 30px;
+  margin: 32px;
+  margin-left: auto;
+}
+
+.name-logo {
+  width: 100%;
+}
+
 .content {
   display: flex;
   flex-direction: column;
@@ -13,81 +46,50 @@ body {
   padding-left: 24px;
   padding-right: 24px;
 }
+
 .fixed-content {
-  max-width: 700px;
   width: 100%;
-  gap: 32px;
+  max-width: 700px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 32px;
 }
-p {
-  margin-top: 0;
-  margin-bottom: 24px;
-}
-.bars {
-  height: 30px;
-  margin: 32px;
-}
-.logo {
-  max-width: 700px;
-  width: 100%;
-}
-.top-nav {
-  margin-left: auto;
-}
-.intro-text.top {
+
+.left {
   margin-right: auto;
 }
 
-.intro-text {
-  font-family: Sofia Sans;
-  font-weight: 300;
-  font-style: Light;
+.nav-button {
+  display: block;
+  font-family: Rethink Sans;
   font-size: 24px;
-  leading-trim: NONE;
-  line-height: 100%;
-  letter-spacing: 0%;
+  width: 100%;
+  text-align: center;
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 
-.nav-buttons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  margin-top: 32px;
-  .nav-button {
-    font-family: Rethink Sans;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 24px;
-    leading-trim: NONE;
-    line-height: 100%;
-    letter-spacing: 0%;
-    width: 100%;
-    text-align: center;
-    padding-top: 18px;
-    padding-bottom: 18px;
-  }
-  .client-work {
-    background-color: #f0b277;
-  }
-  .about {
-    background-color: #6a9da2;
-  }
-  .photography {
-    background-color: #f4bf4f;
-  }
-  .contact {
-    background-color: #7dad63;
-  }
+.client-work {
+  background-color: #f0b277;
 }
+.about {
+  background-color: #6a9da2;
+}
+.photography {
+  background-color: #f4bf4f;
+}
+.contact {
+  background-color: #7dad63;
+}
+
 .contact-info-wrapper {
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
 }
+
 .contact-info {
   max-width: 700px;
   padding: 24px 116px;
@@ -104,7 +106,6 @@ p {
   letter-spacing: 0%;
   @media (max-width: 768px) {
     padding: 24px 58px;
-    /* … */
   }
 
   p {

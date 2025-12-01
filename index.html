@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Features | Vite</title>
-    <meta name="description" content="Next Generation Frontend Tooling" />
+    <title>Laura Jarriel</title>
+    <meta name="description" content="Laura Jarriel's UX/UI design portfolio" />
     <meta name="generator" content="VitePress v2.0.0-alpha.13" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Features" />
+    <meta property="og:title" content="Laura Jarriel" />
     <meta property="og:image" content="https://vite.dev/og-image.jpg" />
-    <meta property="og:url" content="https://vite.dev" />
+    <meta property="og:url" content="https://laurajarrieldesign.com" />
     <meta
       property="og:description"
       content="Next Generation Frontend Tooling"
@@ -42,16 +42,15 @@
     <link rel="stylesheet" href="/src/index.css" />
   </head>
   <body>
+    <div class="top-nav">
+      <img class="hamburger" src="/assets/bars-solid-full.svg" />
+    </div>
     <div class="content">
-      <div class="top-nav">
-        <img class="bars" src="/assets/bars-solid-full.svg" />
-      </div>
-
       <div class="fixed-content">
-        <div class="intro-text top">You’ve reached the UX/UI website for:</div>
-        <img class="logo" src="/assets/logo.svg" alt="logo" />
+        <div class="left">You’ve reached the UX/UI website for:</div>
+        <img class="name-logo" src="/assets/logo.svg" alt="logo" />
 
-        <div class="intro-text">
+        <div class="section">
           <p>
             I spent ten years using a camera to tell human stories as a
             documentary photographer.
@@ -65,12 +64,38 @@
       </div>
     </div>
 
-    <div class="nav-buttons">
-      <a class="nav-button client-work">CLIENT WORK</a>
-      <a class="nav-button about">ABOUT LAURA</a>
-      <a class="nav-button photography">PHOTOGRAPHY</a>
-      <a class="nav-button contact">CONTACT</a>
+    <a class="nav-button client-work" href="#client-work">CLIENT WORK</a>
+    <a class="nav-button about" href="#about"
+      >ABOUT LAURA<span class="collapse">-</span></a
+    >
+    <div id="about" class="closed nav-content content">
+      <div class="fixed-content">
+        <div style="margin-top: 24px" class="section">
+          <p class="left">Howdy,</p>
+          <p>
+            I like to build interfaces that are simple, effective and
+            delightful. User testing is my favorite part of the design process
+            and I believe there's no better way to improve designs than by
+            having people interact with them.
+          </p>
+          <p>
+            My background in journalism has taught me exceptional communication
+            skills that are very useful for interviews and research.
+          </p>
+          <p>
+            Being a photographer for so long means I have an eye for detail and
+            composition that translates very well to UX/UI.
+          </p>
+          <p>
+            When I'm not working on design I enjoy digging in the garden with my
+            dog, Otis. I love to travel and eat delicious food. 
+          </p>
+        </div>
+      </div>
     </div>
+
+    <a class="nav-button photography" href="#photography">PHOTOGRAPHY</a>
+    <a class="nav-button contact" href="#contact">CONTACT</a>
     <div class="contact-info-wrapper">
       <div class="contact-info">
         <div class="contact-info-info">
